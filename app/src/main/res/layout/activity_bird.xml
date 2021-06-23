@@ -4,43 +4,45 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#9CD3EC"
-    tools:context=".ShanqiangActivity">
+    android:background="#C4E3F1"
+    tools:context=".BirdActivity">
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="山羌"
+        android:text="台灣藍鵲"
         android:textColor="#000000"
         android:textSize="48sp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.738" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="325dp"
-        android:layout_height="145dp"
-        android:layout_marginBottom="108dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView9"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/shanqiang" />
+        app:layout_constraintVertical_bias="0.669" />
 
     <TextView
-        android:id="@+id/textView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="4dp"
-        android:text="山羌  學名 Muntiacus reevesi micrurus  俗名 台灣山羌,山羌  科名 鹿科  特有種 是  體長40~70公分（cm），尾長4~10公分（cm），最重可達12公斤。 體毛為土褐色，體背較暗為黑褐色。 幼羌身上具白色斑點。 雌山羌頭部有黑色盾狀紋路，雄山羌頭部有Y字型黑色紋路。 雄羌犬齒發達，頭部有黃色短角，最多僅一叉。 全島低至高海拔山區、以中低海拔為主，未被開發之森林地都有其蹤跡。 並不成群活動，雌雄都有一定領域。 日行性，植食性，多吃植物嫩葉、嫩芽。"
-        android:textColor="#000000"
+        android:id="@+id/textView3"
+        android:layout_width="359dp"
+        android:layout_height="289dp"
+        android:text="台灣藍鵲   Urocissa caerulea  科名：鴉科 Corvidae  別名：長尾山娘  物種特性：台灣特有種  保育類別：珍貴稀有  低海拔闊葉林中不普遍之鳥種，成小群活動，繁殖期會互相照料下一代。 屬雜食性鳥類，取食範圍包括小型鳥、鼠、蛇、蜥蜴、昆蟲、果實，甚至廚餘剩飯。 每年3至4月間，會在較高的樹上，以樹枝、草葉為材料，建造略為粗糙卻很牢靠的碗狀巢形。 其叫聲似「嘎─鏘、嘎─鏘」或一連串的「鏘、鏘、鏘…」。"
+        android:textColor="#070606"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="325dp"
+        android:layout_height="145dp"
+        android:layout_marginBottom="76dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/bird" />
 </androidx.constraintlayout.widget.ConstraintLayout>
