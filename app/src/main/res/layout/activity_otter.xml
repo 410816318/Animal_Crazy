@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AEDBEF"
+    tools:context=".OtterActivity">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="歐亞水獺"
+        android:textColor="#000000"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.769" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="325dp"
+        android:layout_height="145dp"
+        android:layout_marginBottom="44dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/otter" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="歐亞水獺   Lutra lutra  科　　名：貂科 Mustelidae  保育等級：瀕臨絕種  歐亞水獺的毛皮有相當程度的防水保暖功能，但浸泡海水時間過久，鹽分將使毛皮的防水保暖功能下降，因此水獺仍需淡水將身上的鹽分洗去，故生活在海岸附近的水獺會選擇有淡水水源的區域棲息。 而其選擇的棲所必須隱蔽夠、遮蔽好，洞穴、樹叢、石堆、坍塌的堤防護岸或涵洞都是可能的住處，此外牠們也能自行挖洞居住。 歐亞水獺主要在夜間活動，但有時白天也會出現。 牠們通常沿著溪流、河道往返池塘或湖庫等各水域間進行覓食，活動範圍通常會沿著水道兩岸而呈條狀分布。 歐洲地區的研究指出，歐亞水獺活動範圍從幾公里到 20 - 30 公里不等，變化很大，在活動範圍內各個小區域使用的情形或時間長短也不盡相同。 每一隻個體活動範圍隨性別、食物豐度及族群生殖中的雌性個體領域性較強。  "
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

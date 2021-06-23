@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B4E0F4"
+    tools:context=".LionActivity">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="石虎"
+        android:textColor="#000000"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.807" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="325dp"
+        android:layout_height="145dp"
+        android:layout_marginBottom="92dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/lion" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="石虎   Prionailurus bengalensis  科名：貓科  俗名：山貓  保育等級：Ⅰ瀕臨絕種  石虎狩獵工具是牠的兩隻前肢，骨骼粗壯有力，腳掌膨大。 夜行性，白天於樹洞岩穴中休憩，於傍晚後始外出獵食，行動敏捷、身手靈活、善於爬樹。 肉食性，會捕食魚類、鼠類、鳥類、蛙類及哺乳動物幼獸等。 覓食採「守株待兔」的戰略，即沉穩守候在獵物必經的路線旁，遇獵物走過時，就躍出以前肢壓制。 捕獲獵物時會以前腳拍擊壓制，或以嘴緊咬住，至死方休；不像其他小型貓科動物有捉放玩弄獵物的行為。 全年皆可繁殖，懷孕期約60天，每胎產2-4隻幼獸。"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
