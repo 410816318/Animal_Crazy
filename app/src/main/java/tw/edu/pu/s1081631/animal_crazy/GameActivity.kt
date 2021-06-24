@@ -15,55 +15,22 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class GameActivity : AppCompatActivity() {
 
-    var FlagShape:Int = 0
+    var FlagAnimal:Int = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_game)
 
-        btnBack.isEnabled = false
+        btnBack.isEnabled = true
 
         var intent =getIntent()
-        FlagShape = intent.getIntExtra("形狀",0)
-        when(FlagShape){
+        FlagAnimal = intent.getIntExtra("動物",0)
+        when(FlagAnimal){
             1->txvMsg.text="請選出台灣藍鵲"
             2->txvMsg.text="請選出石虎"
             3->txvMsg.text="請選出歐亞水獺"
             4->txvMsg.text="請選出山羌"
         }
-
-        button4.setOnClickListener(object : View.OnClickListener {
-            override fun onClick(p0: View?) {
-                val intent1 = Intent(this@GameActivity, BirdActivity::class.java)
-                startActivity(intent1)
-            }
-
-
-        })
-
-        button3.setOnClickListener(object : View.OnClickListener {
-            override fun onClick(p0: View?) {
-                val intent2 = Intent(this@GameActivity, LionActivity::class.java)
-                startActivity(intent2)
-            }
-
-        })
-
-        button2.setOnClickListener(object : View.OnClickListener {
-            override fun onClick(p0: View?) {
-                val intent3 = Intent(this@GameActivity, OtterActivity::class.java)
-                startActivity(intent3)
-            }
-
-        })
-
-        button.setOnClickListener(object : View.OnClickListener {
-            override fun onClick(p0: View?) {
-                val intent4 = Intent(this@GameActivity, ShanqiangActivity::class.java)
-                startActivity(intent4)
-            }
-
-        })
 
 
         btnBack.setOnClickListener(object: View.OnClickListener{
@@ -73,10 +40,68 @@ class GameActivity : AppCompatActivity() {
             }
         })
 
+        var FlagDraw:Int = 0
+
+        button4.setOnClickListener(object : View.OnClickListener {
+            override fun onClick(p0: View?) {
+
+                FlagDraw= 1
+                if(FlagAnimal == FlagDraw) {
+                    val intent1 = Intent(this@GameActivity, BirdActivity::class.java)
+                    startActivity(intent1)
+                }
+                else{
+                    txvMsg.text = "請再試試看喔!"
+                }
+            }
 
 
+        })
 
+        button3.setOnClickListener(object : View.OnClickListener {
+            override fun onClick(p0: View?) {
 
+                FlagDraw= 2
+                if(FlagAnimal == FlagDraw) {
+                    val intent2 = Intent(this@GameActivity, LionActivity::class.java)
+                    startActivity(intent2)
+                }
+                else{
+                    txvMsg.text = "請再試試看喔!"
+                }
+            }
+
+        })
+
+        button2.setOnClickListener(object : View.OnClickListener {
+            override fun onClick(p0: View?) {
+
+                FlagDraw= 3
+                if(FlagAnimal == FlagDraw) {
+                    val intent3 = Intent(this@GameActivity, OtterActivity::class.java)
+                    startActivity(intent3)
+                }
+                else{
+                    txvMsg.text = "請再試試看喔!"
+                }
+            }
+
+        })
+
+        button.setOnClickListener(object : View.OnClickListener {
+            override fun onClick(p0: View?) {
+
+                FlagDraw= 4
+                if(FlagAnimal == FlagDraw) {
+                    val intent4 = Intent(this@GameActivity, ShanqiangActivity::class.java)
+                    startActivity(intent4)
+                }
+                else{
+                    txvMsg.text = "請再試試看喔!"
+                }
+            }
+
+        })
 
 
     }

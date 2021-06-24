@@ -21,8 +21,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        Toast.makeText(baseContext, "作者：吳曜宇", Toast.LENGTH_LONG).show()
-        rndShape()
+        Toast.makeText(baseContext, "作品：動物急轉彎", Toast.LENGTH_LONG).show()
+        rndAnimal()
 
         GlideApp.with(this)
             .load(R.drawable.bbkpf)
@@ -43,13 +43,13 @@ class MainActivity : AppCompatActivity() {
 
         imgNext.setOnClickListener(object:View.OnClickListener{
             override fun onClick(v: View?) {
-                rndShape()
+                rndAnimal()
             }
 
         })
     }
 
-    fun rndShape(){
+    fun rndAnimal(){
         Flag = (1..4).random()
         when(Flag){
             1->imgNext.setImageResource(R.drawable.bird)
